@@ -1,0 +1,63 @@
+Kata: Medicine Clash
+====================
+
+As a Health Insurer,
+I want to be able to search for patients who have a medicine clash,
+So that I can alert their doctors and get their prescriptions changed.
+
+Health Insurance companies don’t always get such good press, but in 
+this case, they actually do have your best interests at heart. 
+Some medicines interact in unfortunate ways when they get into your 
+body at the same time, and your doctor isn’t always alert enough to 
+spot the clash when writing your prescriptions. Sometimes, medicine 
+interactions are only identified years after the medicines become 
+widely used, and your doctor might not be completely up to date. 
+Your Health Insurer certainly wants you to stay healthy, so discovering 
+a customer has a medicine clash and getting it corrected is good for 
+business, and good for you!
+
+For this Kata, you have a recently discovered medicine clash, and 
+you want to look through a database of patient medicine and prescription 
+records, to find any patients who need to be alerted to the problem. 
+Create a “Patient” class, with a method “Clash” that takes as arguments 
+a list of medicines, and how many days before today to consider, 
+(defaults to the last 90 days). It should return a collection of days 
+on which all the medicines were being taken during this time.
+
+The biology of medicine clashes
+===============================
+
+When you take a pill of medicine, the active substance will be absorbed 
+through the lining of the gut, and enter your bloodstream. That means 
+it will be taken all over your body, and can do its work. For example, 
+if you take a headache pill, the active substance in the drug will be 
+taken with your blood to where it can block your pain receptors. At 
+the same time, there are enzymes at work in your liver, which break 
+down medicinal substances they find in your bloodstream. Eventually 
+all the medicine will be removed, so you have to take another pill 
+if you want the effects to continue.
+
+In the liver, there are several different enzymes working, and they 
+are specialized in breaking down different substances. For example, 
+the “CYP 2C9” enzyme will break down ibuprofen, the active ingredient 
+in many headache pills. The trouble is, there are other medicines which 
+will stop particular enzymes from doing their work, which can lead to 
+an overdose or other ill effects.
+
+One example is the clash between fluoxetine and codeine. Fluoxetine 
+is known by its trade name “Prozac”, and is often taken for depression. 
+Codeine is another ingredient in headache pills, and is actually 
+a “pro-drug”, so it works slightly differently. Codeine needs to be 
+broken down in the liver by the enzyme “CYP 2D6” into the active 
+substance, morphine, before it will do anything. Fluoxetine has 
+the effect of blocking “CYP 2D6”, so if you take the two medicines 
+together, you won’t get much painkilling effect from the codeine. 
+That could be depressing!
+
+The solution to the problem is to take a different painkiller - 
+one that’s not affected by that liver enzyme. Simply switch codeine 
+for ibuprofen, and you should be a little happier!
+
+With thanks to Sara Sjöberg for helping me to write this section.
+
+Quoted from Coding Dojo Handbook by Emily Bache
