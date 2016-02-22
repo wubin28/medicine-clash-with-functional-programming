@@ -1,6 +1,40 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.118
-
-OK (10 tests)
-
+MedicineClashTest.java:7: error: ';' expected
+             given two clashed medicines were being taken during 
+                      ^
+MedicineClashTest.java:7: error: ';' expected
+             given two clashed medicines were being taken during 
+                                        ^
+MedicineClashTest.java:7: error: ';' expected
+             given two clashed medicines were being taken during 
+                                                   ^
+MedicineClashTest.java:7: error: ';' expected
+             given two clashed medicines were being taken during 
+                                                                ^
+MedicineClashTest.java:8: error: ';' expected
+             a given period of time (defaults to the last 90 days).
+                    ^
+MedicineClashTest.java:8: error: ';' expected
+             a given period of time (defaults to the last 90 days).
+                              ^
+MedicineClashTest.java:8: error: invalid method declaration; return type required
+             a given period of time (defaults to the last 90 days).
+                               ^
+MedicineClashTest.java:8: error: ')' expected
+             a given period of time (defaults to the last 90 days).
+                                                ^
+MedicineClashTest.java:8: error: <identifier> expected
+             a given period of time (defaults to the last 90 days).
+                                                         ^
+MedicineClashTest.java:8: error: <identifier> expected
+             a given period of time (defaults to the last 90 days).
+                                                                 ^
+MedicineClashTest.java:8: error: illegal start of type
+             a given period of time (defaults to the last 90 days).
+                                                                  ^
+MedicineClashTest.java:8: error: <identifier> expected
+             a given period of time (defaults to the last 90 days).
+                                                                   ^
+MedicineClashTest.java:10: error: ';' expected
+    @Test
+     ^
+13 errors
