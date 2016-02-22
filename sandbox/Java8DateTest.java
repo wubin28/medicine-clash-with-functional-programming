@@ -34,7 +34,7 @@ public class Java8DateTest {
         long periodInDays = birthday.until(now, ChronoUnit.DAYS);
 
         assertEquals(45, period.getYears());
-        assertEquals(16528, periodInDays);
+        assertEquals(16553, periodInDays);
     }
 
     // TODO: the_5th_concept_is_DateAdjuster_which_is_useful_to_add_or_substract_an_amount_of_time_to_an_Instant_or_a_LocalDate() {

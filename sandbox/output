@@ -1,11 +1,6 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-........E..
-Time: 0.152
-There was 1 failure:
-1) the_4th_concept_is_Period_which_is_the_amount_of_time_between_two_LocalDate(Java8DateTest)
-java.lang.AssertionError: expected:<16528> but was:<16553>
-	at Java8DateTest.the_4th_concept_is_Period_which_is_the_amount_of_time_between_two_LocalDate(Java8DateTest.java:37)
+..........
+Time: 0.128
 
-FAILURES!!!
-Tests run: 10,  Failures: 1
+OK (10 tests)
 
