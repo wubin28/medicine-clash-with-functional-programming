@@ -13,16 +13,24 @@ public class MedicineClashTest {
     //             So that I can alert their doctors and get their 
     //                 prescriptions changed.
 
-    // TODO: no_clash_when_not_taking_both_medicines
+    // ID, CustomerName, Medicine, DispenseDate, daysSupply, DoctorName
+    // MedicineTaking(-ID-, -CustomerName-, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
+    //      /                    \
+    //     /                     *\
+    //  Customer(ID, Name)      Medicine(Name, -DispenseDate-, -daysSupply-, -DoctorName-)
+    //                             /
+    //                           */
+    //                         Prescription(DispenseDate, daysSupply, DoctorName)
+
+    @Test
+    public void no_clash_when_not_taking_both_medicines() {
+        assertEquals(0, medicine);
+    }
+
     // TODO: no_clash_when_no_overlap
     // TODO: two_medicines_taken_in_a_partially_overlapping_period
     // TODO: two_medicines_taken_overlapping_start_of_period
     // TODO: two_medicines_taken_overlapping_current_date
     // TODO: clash_when_medicines_taken_continuously
     // TODO: clash_when_one_medicine_taken_on_some_of_the_days
-
-    @Test
-    public void should() {
-        assertEquals(1, 1);
-    }
 }

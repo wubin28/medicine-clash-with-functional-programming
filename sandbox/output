@@ -1,6 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.163
-
-OK (10 tests)
-
+MedicineClashTest.java:27: error: cannot find symbol
+        assertEquals(0, medicine);
+                        ^
+  symbol:   variable medicine
+  location: class MedicineClashTest
+1 error
