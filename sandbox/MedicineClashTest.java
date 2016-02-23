@@ -14,17 +14,17 @@ public class MedicineClashTest {
     //                 prescriptions changed.
 
     // ID, CustomerName, Medicine, DispenseDate, daysSupply, DoctorName
-    // MedicineTaking(-ID-, -CustomerName-, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
-    //      /                    \
-    //     /                     *\
-    //  Customer(ID, Name)      Medicine(Name, -DispenseDate-, -daysSupply-, -DoctorName-)
-    //                             /
-    //                           */
-    //                         Prescription(DispenseDate, daysSupply, DoctorName)
+    // CustomerMedicineTaking(ID, CustomerName, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
+    //         \
+    //         *\
+    //         Medicine(Name, -DispenseDate-, -daysSupply-, -DoctorName-)
+    //            /
+    //          */
+    //         Prescription(DispenseDate, daysSupply, DoctorName)
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
-        assertEquals(0, medicine);
+        assertEquals(0, medicineClash.daysOf(customerMedicineTaking));
     }
 
     // TODO: no_clash_when_no_overlap
