@@ -1,6 +1,6 @@
-Medicine.java:2: error: cannot find symbol
-    public Medicine(String name, Set<Prescription> prescriptions) {
-                                 ^
-  symbol:   class Set
-  location: class Medicine
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+..........
+Time: 0.119
+
+OK (10 tests)
+
