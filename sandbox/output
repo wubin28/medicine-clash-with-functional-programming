@@ -1,11 +1,6 @@
-Customer.java:2: error: cannot find symbol
-    public Customer(String id, String name, Set<Medicine> medicines) {
-                                            ^
-  symbol:   class Set
-  location: class Customer
 MedicineClashTest.java:34: error: cannot find symbol
         assertEquals(expectedClashedSet, medicineClash.Of(customers));
                                          ^
   symbol:   variable medicineClash
   location: class MedicineClashTest
-2 errors
+1 error
