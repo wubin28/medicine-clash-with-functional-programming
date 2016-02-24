@@ -1,11 +1,14 @@
-MedicineClash.java:2: error: cannot find symbol
-    public static Set<Customer> of(Set<Customer> customers) {
-                                   ^
-  symbol:   class Set
-  location: class MedicineClash
-MedicineClash.java:2: error: cannot find symbol
-    public static Set<Customer> of(Set<Customer> customers) {
-                  ^
-  symbol:   class Set
-  location: class MedicineClash
-2 errors
+JUnit version 4.11-SNAPSHOT-20120416-1530
+........E..E
+Time: 0.131
+There were 2 failures:
+1) the_4th_concept_is_Period_which_is_the_amount_of_time_between_two_LocalDate(Java8DateTest)
+java.lang.AssertionError: expected:<16553> but was:<16555>
+	at Java8DateTest.the_4th_concept_is_Period_which_is_the_amount_of_time_between_two_LocalDate(Java8DateTest.java:37)
+2) no_clash_when_not_taking_both_medicines(MedicineClashTest)
+java.lang.AssertionError: expected:<[]> but was:<null>
+	at MedicineClashTest.no_clash_when_not_taking_both_medicines(MedicineClashTest.java:34)
+
+FAILURES!!!
+Tests run: 10,  Failures: 2
+
