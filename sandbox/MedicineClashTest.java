@@ -26,8 +26,10 @@ public class MedicineClashTest {
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
-        Set<Customer> clashedSet = new HashSet<Customer>();
-        assertEquals(clashedSet, medicineClash.Of(customers));
+        Set<Customer> expectedClashedSet = new HashSet<Customer>();
+        Set<Customer> customers = new HashSet<Customer>();
+        customers.add(customerNotTakingBothMedicines);
+        assertEquals(expectedClashedSet, medicineClash.Of(customers));
     }
 
     // TODO: no_clash_when_no_overlap
