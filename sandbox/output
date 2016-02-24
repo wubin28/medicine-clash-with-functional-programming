@@ -1,3 +1,29 @@
+Java7DateTest.java:40: error: non-static method getCreationDate() cannot be referenced from a static context
+        Date date = User.getCreationDate();
+                        ^
+Java7DateTest.java:45: error: non-static method getCreationDate() cannot be referenced from a static context
+            User.getCreationDate().toString());
+                ^
+MedicineClashTest.java:29: error: cannot find symbol
+        Set<Customer> expectedClashedSet = new HashSet<Customer>();
+            ^
+  symbol:   class Customer
+  location: class MedicineClashTest
+MedicineClashTest.java:29: error: cannot find symbol
+        Set<Customer> expectedClashedSet = new HashSet<Customer>();
+                                                       ^
+  symbol:   class Customer
+  location: class MedicineClashTest
+MedicineClashTest.java:30: error: cannot find symbol
+        Set<Customer> customers = new HashSet<Customer>();
+            ^
+  symbol:   class Customer
+  location: class MedicineClashTest
+MedicineClashTest.java:30: error: cannot find symbol
+        Set<Customer> customers = new HashSet<Customer>();
+                                              ^
+  symbol:   class Customer
+  location: class MedicineClashTest
 MedicineClashTest.java:31: error: cannot find symbol
         Set<Medicine> medicines = new HashSet<Medicine>();
             ^
@@ -8,9 +34,19 @@ MedicineClashTest.java:31: error: cannot find symbol
                                               ^
   symbol:   class Medicine
   location: class MedicineClashTest
+MedicineClashTest.java:32: error: cannot find symbol
+        Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
+        ^
+  symbol:   class Customer
+  location: class MedicineClashTest
+MedicineClashTest.java:32: error: cannot find symbol
+        Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
+                                                      ^
+  symbol:   class Customer
+  location: class MedicineClashTest
 MedicineClashTest.java:34: error: cannot find symbol
         assertEquals(expectedClashedSet, medicineClash.Of(customers));
                                          ^
   symbol:   variable medicineClash
   location: class MedicineClashTest
-3 errors
+11 errors

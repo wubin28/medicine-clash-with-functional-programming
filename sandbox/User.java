@@ -1,9 +1,9 @@
 import java.util.Date;
 
-public class Customer {
+public class User {
     private Date creationDate;
 
-    public Customer(Date creationDate) {
+    public User(Date creationDate) {
         this.creationDate = creationDate;
     }
 

@@ -36,25 +36,25 @@ public class Java7DateTest {
     @Test
     public void date_class_is_mutable_in_java_7_but_not_in_java_8() {
         Date current = new Date();
-        Customer customer = new Customer(current);
-        Date date = customer.getCreationDate();
+        User user = new User(current);
+        Date date = User.getCreationDate();
 
         date.setTime(0L);
 
         assertEquals(current.toString(), 
-            customer.getCreationDate().toString());
+            User.getCreationDate().toString());
     }
 
     @Test
     public void use_a_defensive_copy_to_prevent_mutable_date_class() {
         Date current = new Date();
-        Customer customer = new Customer(current);
-        Date date = customer.getCreationDateImmutable();
+        User user = new User(current);
+        Date date = user.getCreationDateImmutable();
 
         date.setTime(0L);
 
         assertEquals(current.toString(), 
-            customer.getCreationDateImmutable().toString());
+            user.getCreationDateImmutable().toString());
     }
 
 }
