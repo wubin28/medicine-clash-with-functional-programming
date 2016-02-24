@@ -31,7 +31,7 @@ public class MedicineClashTest {
         Set<Medicine> medicines = new HashSet<Medicine>();
         Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
         customers.add(customerNotTakingBothMedicines);
-        assertEquals(expectedClashedSet, MedicineClash.Of(customers));
+        assertEquals(expectedClashedSet, MedicineClash.of(customers));
     }
 
     // TODO: no_clash_when_no_overlap
