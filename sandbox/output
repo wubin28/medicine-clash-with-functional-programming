@@ -1,6 +1,3 @@
-Java7DateTest.java:45: error: non-static method getCreationDate() cannot be referenced from a static context
-            User.getCreationDate().toString());
-                ^
 MedicineClashTest.java:29: error: cannot find symbol
         Set<Customer> expectedClashedSet = new HashSet<Customer>();
             ^
@@ -46,4 +43,4 @@ MedicineClashTest.java:34: error: cannot find symbol
                                          ^
   symbol:   variable medicineClash
   location: class MedicineClashTest
-10 errors
+9 errors

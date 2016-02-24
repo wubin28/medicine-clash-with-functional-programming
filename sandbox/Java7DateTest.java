@@ -42,7 +42,7 @@ public class Java7DateTest {
         date.setTime(0L);
 
         assertEquals(current.toString(), 
-            User.getCreationDate().toString());
+            user.getCreationDate().toString());
     }
 
     @Test
