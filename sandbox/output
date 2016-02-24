@@ -1,13 +1,21 @@
-MedicineClashTest.java:28: error: ';' expected
+MedicineClashTest.java:27: error: cannot find symbol
+        Set<Customer> clashedSet = new HashSet<Customer>();
+        ^
+  symbol:   class Set
+  location: class MedicineClashTest
+MedicineClashTest.java:27: error: cannot find symbol
+        Set<Customer> clashedSet = new HashSet<Customer>();
+                                       ^
+  symbol:   class HashSet
+  location: class MedicineClashTest
+MedicineClashTest.java:28: error: cannot find symbol
         assertEquals(clashedSet, medicineClash.Of(customers));
-                    ^
-MedicineClashTest.java:28: error: not a statement
+                                                  ^
+  symbol:   variable customers
+  location: class MedicineClashTest
+MedicineClashTest.java:28: error: cannot find symbol
         assertEquals(clashedSet, medicineClash.Of(customers));
-                     ^
-MedicineClashTest.java:28: error: ';' expected
-        assertEquals(clashedSet, medicineClash.Of(customers));
-                               ^
-MedicineClashTest.java:28: error: ';' expected
-        assertEquals(clashedSet, medicineClash.Of(customers));
-                                                            ^
+                                 ^
+  symbol:   variable medicineClash
+  location: class MedicineClashTest
 4 errors

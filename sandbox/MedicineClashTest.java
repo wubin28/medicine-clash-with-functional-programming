@@ -24,7 +24,7 @@ public class MedicineClashTest {
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
-        Set<Customer> 
+        Set<Customer> clashedSet = new HashSet<Customer>();
         assertEquals(clashedSet, medicineClash.Of(customers));
     }
 
