@@ -1,9 +1,9 @@
 MedicineClashTest.java:31: error: cannot find symbol
-        customers.add(customerNotTakingBothMedicines);
-                      ^
-  symbol:   variable customerNotTakingBothMedicines
+        Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
+                                                                                            ^
+  symbol:   variable medicines
   location: class MedicineClashTest
-MedicineClashTest.java:32: error: cannot find symbol
+MedicineClashTest.java:33: error: cannot find symbol
         assertEquals(expectedClashedSet, medicineClash.Of(customers));
                                          ^
   symbol:   variable medicineClash
