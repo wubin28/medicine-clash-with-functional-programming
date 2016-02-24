@@ -37,7 +37,7 @@ public class Java7DateTest {
     public void date_class_is_mutable_in_java_7_but_not_in_java_8() {
         Date current = new Date();
         User user = new User(current);
-        Date date = User.getCreationDate();
+        Date date = user.getCreationDate();
 
         date.setTime(0L);
 
