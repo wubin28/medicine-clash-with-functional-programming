@@ -1,4 +1,6 @@
-Java8DateTest.java:34: error: ')' expected
-        assertEquals(16555, birthday.until(now, ChronoUnit.DAYS);
-                                                                ^
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+..........
+Time: 0.134
+
+OK (10 tests)
+
