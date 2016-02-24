@@ -28,6 +28,7 @@ public class MedicineClashTest {
     public void no_clash_when_not_taking_both_medicines() {
         Set<Customer> expectedClashedSet = new HashSet<Customer>();
         Set<Customer> customers = new HashSet<Customer>();
+        Set<Medicine> medicines = new HashSet<Medicine>();
         Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
         customers.add(customerNotTakingBothMedicines);
         assertEquals(expectedClashedSet, medicineClash.Of(customers));

@@ -1,11 +1,16 @@
 MedicineClashTest.java:31: error: cannot find symbol
-        Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
-                                                                                            ^
-  symbol:   variable medicines
+        Set<Medicine> medicines = new HashSet<Medicine>();
+            ^
+  symbol:   class Medicine
   location: class MedicineClashTest
-MedicineClashTest.java:33: error: cannot find symbol
+MedicineClashTest.java:31: error: cannot find symbol
+        Set<Medicine> medicines = new HashSet<Medicine>();
+                                              ^
+  symbol:   class Medicine
+  location: class MedicineClashTest
+MedicineClashTest.java:34: error: cannot find symbol
         assertEquals(expectedClashedSet, medicineClash.Of(customers));
                                          ^
   symbol:   variable medicineClash
   location: class MedicineClashTest
-2 errors
+3 errors
