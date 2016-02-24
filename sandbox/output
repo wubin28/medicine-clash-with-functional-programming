@@ -1,6 +1,11 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.134
-
-OK (10 tests)
-
+MedicineClashTest.java:31: error: cannot find symbol
+        Set<Prescription> prescriptions = new HashSet<>();
+            ^
+  symbol:   class Prescription
+  location: class MedicineClashTest
+MedicineClashTest.java:33: error: cannot find symbol
+            new Prescription(LocalDate.now().minusDays(30), 
+                ^
+  symbol:   class Prescription
+  location: class MedicineClashTest
+2 errors

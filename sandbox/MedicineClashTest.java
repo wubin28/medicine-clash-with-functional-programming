@@ -26,13 +26,18 @@ public class MedicineClashTest {
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
-        Set<Customer> expectedClashedSet = new HashSet<Customer>();
         Set<Customer> customers = new HashSet<Customer>();
         Set<Medicine> medicines = new HashSet<Medicine>();
-        Customer customerNotTakingBothMedicines = new Customer("110101197010104510", "Ben", medicines);
-        customers.add(customerNotTakingBothMedicines);
+        Set<Prescription> prescriptions = new HashSet<>();
+        prescriptions.add(
+            new Prescription(LocalDate.now().minusDays(30), 
+                30, "Jason"));
+        medicines.add(new Medicine("Codeine", prescriptions));
+        customers.add(
+            new Customer("110101197010104510", "Ben", 
+                medicines));
 
-        assertEquals(expectedClashedSet, MedicineClash.of(customers));
+        assertEquals(new HashSet<Customer>(), MedicineClash.of(customers));
     }
 
     // TODO: no_clash_when_no_overlap
