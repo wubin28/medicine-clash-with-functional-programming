@@ -16,7 +16,7 @@ public class MedicineClashTest {
     //                 prescriptions changed.
 
     // ID, CustomerName, Medicine, DispenseDate, daysSupply, DoctorName
-    // Customer(ID, CustomerName, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
+    // Customer(ID, Name, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
     //         \
     //         *\
     //         Medicine(Name, -DispenseDate-, -daysSupply-, -DoctorName-)
