@@ -14,7 +14,7 @@ public class MedicineClashTest {
     //                 prescriptions changed.
 
     // ID, CustomerName, Medicine, DispenseDate, daysSupply, DoctorName
-    // CustomerMedicineTaking(ID, CustomerName, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
+    // MedicineTakingCustomer(ID, CustomerName, -Medicine-, -DispenseDate-, -daysSupply-, -DoctorName-)
     //         \
     //         *\
     //         Medicine(Name, -DispenseDate-, -daysSupply-, -DoctorName-)
@@ -24,7 +24,7 @@ public class MedicineClashTest {
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
-        assertEquals(0, medicineClash.daysOf(customerMedicineTaking));
+        assertEquals(clashedSet, medicineClash.Of(medicineTakingCustomers));
     }
 
     // TODO: no_clash_when_no_overlap

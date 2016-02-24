@@ -1,11 +1,16 @@
 MedicineClashTest.java:27: error: cannot find symbol
-        assertEquals(0, medicineClash.daysOf(customerMedicineTaking));
-                                             ^
-  symbol:   variable customerMedicineTaking
+        assertEquals(clashedSet, medicineClash.Of(medicineTakingCustomers));
+                     ^
+  symbol:   variable clashedSet
   location: class MedicineClashTest
 MedicineClashTest.java:27: error: cannot find symbol
-        assertEquals(0, medicineClash.daysOf(customerMedicineTaking));
-                        ^
+        assertEquals(clashedSet, medicineClash.Of(medicineTakingCustomers));
+                                                  ^
+  symbol:   variable medicineTakingCustomers
+  location: class MedicineClashTest
+MedicineClashTest.java:27: error: cannot find symbol
+        assertEquals(clashedSet, medicineClash.Of(medicineTakingCustomers));
+                                 ^
   symbol:   variable medicineClash
   location: class MedicineClashTest
-2 errors
+3 errors
