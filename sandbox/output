@@ -1,6 +1,4 @@
-MedicineClashTest.java:34: error: cannot find symbol
-        assertEquals(expectedClashedSet, MedicineClash.of(customers));
-                                                      ^
-  symbol:   method of(Set<Customer>)
-  location: class MedicineClash
+MedicineClash.java:2: error: <identifier> expected
+    public static Set<Customer> of(Set<Customer>) {
+                                                ^
 1 error
