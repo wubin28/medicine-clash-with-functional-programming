@@ -1,6 +1,6 @@
 MedicineClashTest.java:34: error: cannot find symbol
-        assertEquals(expectedClashedSet, medicineClash.Of(customers));
+        assertEquals(expectedClashedSet, MedicineClash.Of(customers));
                                          ^
-  symbol:   variable medicineClash
+  symbol:   variable MedicineClash
   location: class MedicineClashTest
 1 error
