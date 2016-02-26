@@ -66,7 +66,28 @@ public class MedicineClashTest {
             MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
     }
 
-    // TODO: two_medicines_taken_in_a_partially_overlapping_period
+    @Test
+    public void two_medicines_taken_in_a_partially_overlapping_period() {
+        List<Customer> customers = new ArrayList<>();
+        List<Medicine> medicines = new ArrayList<>();
+
+        medicines.add(new Medicine("Codeine", 
+            Arrays.asList(
+                new Prescription(LocalDate.now().minusDays(30), 30, "Jason")
+            )));
+        medicines.add(new Medicine("Prozac", 
+            Arrays.asList(
+                new Prescription(LocalDate.now().minusDays(40), 40, "Alice")
+            )));
+
+        customers.add(
+            new Customer("110101197010104510", "Ben", 
+                medicines));
+        
+        assertEquals(new ArrayList<Customer>(), 
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
+    }
+
     // TODO: two_medicines_taken_overlapping_start_of_period
     // TODO: two_medicines_taken_overlapping_current_date
     // TODO: clash_when_medicines_taken_continuously
