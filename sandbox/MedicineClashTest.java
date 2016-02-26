@@ -31,13 +31,11 @@ public class MedicineClashTest {
         List<Customer> customers = new ArrayList<>();
         List<Medicine> medicines = new ArrayList<>();
 
-        // TODO: inline this
-        List<Prescription> prescriptions = new ArrayList<>();
+        medicines.add(new Medicine("Codeine", 
+            Arrays.asList(
+                new Prescription(LocalDate.now().minusDays(30), 30, "Jason")
+            )));
 
-        prescriptions.add(
-            new Prescription(LocalDate.now().minusDays(30), 
-                30, "Jason"));
-        medicines.add(new Medicine("Codeine", prescriptions));
         customers.add(
             new Customer("110101197010104510", "Ben", 
                 medicines));
@@ -55,7 +53,6 @@ public class MedicineClashTest {
             Arrays.asList(
                 new Prescription(LocalDate.now().minusDays(30), 30, "Jason")
             )));
-
         medicines.add(new Medicine("Prozac", 
             Arrays.asList(
                 new Prescription(LocalDate.now().minusDays(90), 30, "Alice")
