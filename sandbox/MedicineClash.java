@@ -10,13 +10,13 @@ public class MedicineClash {
         return customers.stream()
             .filter(customer -> customer.medicines.size() == 2)
             .filter(customer -> 
-                MedicineClash.isOverlapped(customers, daysBeforeToday, now))
+                MedicineClash.isOverlapped(customer, daysBeforeToday, now))
             .collect(Collectors.toList());
     }
 
-    public static boolean isOverlapped(List<Customer> customers,
+    public static boolean isOverlapped(Customer customer,
             long daysBeforeToday, LocalDate now) {
-        if (customers.medicines.size() < 2) {
+        if (customer.medicines.size() < 2) {
             return false;
         }
         return true;
