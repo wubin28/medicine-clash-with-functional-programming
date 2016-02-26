@@ -1,6 +1,6 @@
-import java.util.Set;
+import java.util.List;
 
 public class Medicine {
-    public Medicine(String name, Set<Prescription> prescriptions) {
+    public Medicine(String name, List<Prescription> prescriptions) {
     }
 }
