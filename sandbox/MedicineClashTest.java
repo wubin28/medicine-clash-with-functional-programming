@@ -3,6 +3,7 @@ import static org.junit.Assert.*;
 import java.util.List;
 import java.util.ArrayList;
 import java.time.LocalDate;
+import java.util.Arrays;
 
 public class MedicineClashTest {
 
