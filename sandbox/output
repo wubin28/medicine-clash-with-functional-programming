@@ -1,22 +1,6 @@
-MedicineClash.java:14: error: '.class' expected
-                    long daysBeforeToday, LocalDate now))
-                         ^
-MedicineClash.java:14: error: ')' expected
-                    long daysBeforeToday, LocalDate now))
-                                                   ^
-MedicineClash.java:14: error: illegal start of expression
-                    long daysBeforeToday, LocalDate now))
-                                                       ^
-MedicineClash.java:14: error: ';' expected
-                    long daysBeforeToday, LocalDate now))
-                                                        ^
-MedicineClash.java:15: error: illegal start of expression
-            .collect(Collectors.toList());
-            ^
-MedicineClash.java:15: error: ';' expected
-            .collect(Collectors.toList());
-                    ^
-MedicineClash.java:15: error: ';' expected
-            .collect(Collectors.toList());
-                                        ^
-7 errors
+MedicineClash.java:13: error: cannot find symbol
+                MedicineClash.isOverlapped(customers, daysBeforeToday, now))
+                             ^
+  symbol:   method isOverlapped(List<Customer>,long,LocalDate)
+  location: class MedicineClash
+1 error
