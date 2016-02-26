@@ -20,6 +20,6 @@ public class MedicineClash {
             Customer customer,
             long daysBeforeToday, 
             LocalDate now) {
-        return true;
+        return false;
     }
 }
