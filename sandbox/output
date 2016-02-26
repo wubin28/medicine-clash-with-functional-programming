@@ -1,8 +1,5 @@
-MedicineClashTest.java:40: error: incompatible types: List<Medicine> cannot be converted to Set<Medicine>
-                medicines));
-                ^
 MedicineClashTest.java:42: error: incompatible types: List<Customer> cannot be converted to Set<Customer>
         assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
                                                                  ^
 Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
-2 errors
+1 error
