@@ -6,7 +6,10 @@ public class Prescription {
     public String doctorName;
 
     public Prescription(LocalDate dispenseDate, int daysSupply, 
-        String doctorName) {
+            String doctorName) {
+        this.dispenseDate = dispenseDate;
+        this.daysSupply = daysSupply;
+        this.doctorName = doctorName;
     }
 
     @Override
