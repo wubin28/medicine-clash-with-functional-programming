@@ -65,7 +65,8 @@ public class MedicineClashTest {
             new Customer("110101197010104510", "Ben", 
                 medicines));
         
-        assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
+        assertEquals(new ArrayList<Customer>(), 
+            MedicineClash.of(customers, 90, LocalDate.now()));
     }
 
     // TODO: two_medicines_taken_in_a_partially_overlapping_period
