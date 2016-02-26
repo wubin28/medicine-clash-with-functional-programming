@@ -1,9 +1,9 @@
-MedicineClash.java:8: error: cannot find symbol
+MedicineClash.java:9: error: cannot find symbol
             .collect(Collectors.toSet());
                      ^
   symbol:   variable Collectors
   location: class MedicineClash
-MedicineClash.java:7: error: cannot find symbol
+MedicineClash.java:8: error: cannot find symbol
             .filter(customer -> customer.medicines.size() == 1)
                                         ^
   symbol:   variable medicines

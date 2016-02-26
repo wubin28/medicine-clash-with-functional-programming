@@ -1,5 +1,6 @@
 import java.util.Set;
 import java.util.HashSet;
+import java.util.stream.Stream;
 
 public class MedicineClash {
     public static Set<Customer> of(Set<Customer> customers) {
