@@ -1,12 +1,7 @@
-MedicineClash.java:7: error: cannot find symbol
-            long daysBeforeToday, LocalDate now) {
-                                  ^
-  symbol:   class LocalDate
-  location: class MedicineClash
 MedicineClashTest.java:68: error: method of in class MedicineClash cannot be applied to given types;
         assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
                                                              ^
   required: List<Customer>,long,LocalDate
   found: List<Customer>
   reason: actual and formal argument lists differ in length
-2 errors
+1 error
