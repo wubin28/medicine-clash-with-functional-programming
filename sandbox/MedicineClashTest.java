@@ -37,7 +37,7 @@ public class MedicineClashTest {
         customers.add(
             new Customer("110101197010104510", "Ben", 
                 medicines));
-
+        
         assertEquals(new HashSet<Customer>(), MedicineClash.of(customers));
     }
 
