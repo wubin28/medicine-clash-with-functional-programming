@@ -30,6 +30,8 @@ public class MedicineClashTest {
     public void no_clash_when_not_taking_both_medicines() {
         List<Customer> customers = new ArrayList<>();
         List<Medicine> medicines = new ArrayList<>();
+
+        // TODO: inline this
         List<Prescription> prescriptions = new ArrayList<>();
 
         prescriptions.add(
@@ -40,7 +42,8 @@ public class MedicineClashTest {
             new Customer("110101197010104510", "Ben", 
                 medicines));
         
-        assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
+        assertEquals(new ArrayList<Customer>(), 
+            MedicineClash.of(customers, 90, LocalDate.now()));
     }
 
     @Test
