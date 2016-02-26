@@ -17,26 +17,20 @@ public class Customer {
     }
 
     @Override
-    public int hashCode() {
-        return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
-            // if deriving: appendSuper(super.hashCode()).
-            append(id).
-            append(name).
-            toHashCode();
-    }
+    public boolean equals(Object obj) { 
+        if (obj == this)
+            return true;
+        if (!(obj instanceof Customer))
+            return false;
+        Customer customer = (Customer) obj; 
+        return customer.id == this.id &&
+            customer.name == this.name;
 
     @Override
-    public boolean equals(Object object) {
-       if (!(object instanceof Customer))
-            return false;
-        if (object == this)
-            return true;
-
-        Customer customer = (Customer) object;
-        return new EqualsBuilder().
-            // if deriving: appendSuper(super.equals(object)).
-            append(id, customer.id).
-            append(name, rhs.name).
-            isEquals();
+    public int hashCode() {
+        int hashValue = 11;
+        hashValue = 31 * hashValue + name; 
+        hashValue = 31 * hashValue + id; 
+        return hashValue;
     }
 }

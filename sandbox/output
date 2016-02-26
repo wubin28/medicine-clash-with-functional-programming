@@ -1,16 +1,7 @@
-Customer.java:21: error: cannot find symbol
-        return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
-                   ^
-  symbol:   class HashCodeBuilder
-  location: class Customer
-Customer.java:39: error: cannot find symbol
-            append(name, rhs.name).
-                         ^
-  symbol:   variable rhs
-  location: class Customer
-Customer.java:36: error: cannot find symbol
-        return new EqualsBuilder().
-                   ^
-  symbol:   class EqualsBuilder
-  location: class Customer
-3 errors
+Customer.java:30: error: ';' expected
+    public int hashCode() {
+                       ^
+Customer.java:36: error: reached end of file while parsing
+}
+ ^
+2 errors
