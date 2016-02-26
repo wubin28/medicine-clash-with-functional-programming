@@ -30,8 +30,9 @@ public class Customer {
     @Override
     public int hashCode() {
         int hashValue = 11;
-        hashValue = 31 * hashValue + name; 
-        hashValue = 31 * hashValue + id; 
+        hashValue = 31 * hashValue + name.hashCode(); 
+        hashValue = 31 * hashValue + id.hashCode(); 
         return hashValue;
     }
 }
+
