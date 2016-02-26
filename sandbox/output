@@ -1,6 +1,6 @@
-MedicineClashTest.java:88: error: cannot find symbol
-            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()).id);
-                                                                                 ^
-  symbol:   variable id
-  location: interface List<Customer>
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+............
+Time: 0.156
+
+OK (12 tests)
+

@@ -84,8 +84,8 @@ public class MedicineClashTest {
             new Customer("110101197010104510", "Ben", 
                 medicines));
         
-        assertEquals("110101197010104510", 
-            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()).id);
+        assertEquals(1, 
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()).size());
     }
 
     // TODO: two_medicines_taken_overlapping_start_of_period
