@@ -9,9 +9,7 @@ public class MedicineClash {
             long daysBeforeToday, 
             LocalDate now) {
         return customers.stream()
-            .peek(customer -> System.out.println(customer))
             .filter(customer -> customer.medicines.size() == 2)
-            .peek(customer -> System.out.println(customer))
             .filter(customer -> 
                 MedicineClash.isOverlapped(customer, daysBeforeToday, now))
             .collect(Collectors.toList());
