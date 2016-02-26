@@ -4,7 +4,8 @@ import java.util.stream.Collectors;
 import java.time.LocalDate;
 
 public class MedicineClash {
-    public static List<Customer> of(List<Customer> customers,
+    public static List<Customer> of(
+            List<Customer> customers,
             long daysBeforeToday, 
             LocalDate now) {
         return customers.stream()
@@ -14,11 +15,10 @@ public class MedicineClash {
             .collect(Collectors.toList());
     }
 
-    public static boolean isOverlapped(Customer customer,
-            long daysBeforeToday, LocalDate now) {
-        if (customer.medicines.size() < 2) {
-            return false;
-        }
+    public static boolean isOverlapped(
+            Customer customer,
+            long daysBeforeToday, 
+            LocalDate now) {
         return true;
     }
 }
