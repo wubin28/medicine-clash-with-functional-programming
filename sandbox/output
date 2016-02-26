@@ -1,6 +1,6 @@
-MedicineClash.java:13: error: cannot find symbol
-                MedicineClash.isOverlapped(customers, daysBeforeToday, now))
-                             ^
-  symbol:   method isOverlapped(List<Customer>,long,LocalDate)
-  location: class MedicineClash
-1 error
+JUnit version 4.11-SNAPSHOT-20120416-1530
+...........
+Time: 0.139
+
+OK (11 tests)
+

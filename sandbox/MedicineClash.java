@@ -13,4 +13,9 @@ public class MedicineClash {
                 MedicineClash.isOverlapped(customers, daysBeforeToday, now))
             .collect(Collectors.toList());
     }
+
+    public static boolean isOverlapped(List<Customer> customers,
+            long daysBeforeToday, LocalDate now) {
+        return false;
+    }
 }
