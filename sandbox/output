@@ -1,9 +1,11 @@
-Prescription.java:10: error: cannot find symbol
-        return "Prescription dispense date is " + this.dispenseDate + "for " + this.daysSupply + " days";
-                                                      ^
-  symbol: variable dispenseDate
-Prescription.java:10: error: cannot find symbol
-        return "Prescription dispense date is " + this.dispenseDate + "for " + this.daysSupply + " days";
-                                                                                   ^
-  symbol: variable daysSupply
-2 errors
+JUnit version 4.11-SNAPSHOT-20120416-1530
+..........E.
+Time: 0.157
+There was 1 failure:
+1) no_clash_when_no_overlap(MedicineClashTest)
+java.lang.AssertionError: expected:<[]> but was:<[Customer Ben (110101197010104510) taking medicines [Medicine Codeine with prescriptions [Prescription written on null for 0 days by null, Prescription written on null for 0 days by null], Medicine Prozac with prescriptions [Prescription written on null for 0 days by null, Prescription written on null for 0 days by null]]]>
+	at MedicineClashTest.no_clash_when_no_overlap(MedicineClashTest.java:65)
+
+FAILURES!!!
+Tests run: 11,  Failures: 1
+
