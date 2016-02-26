@@ -46,17 +46,16 @@ public class MedicineClashTest {
     public void no_clash_when_no_overlap() {
         List<Customer> customers = new ArrayList<>();
         List<Medicine> medicines = new ArrayList<>();
-        List<Prescription> prescriptions = new ArrayList<>();
 
-        prescriptions.add(
-            new Prescription(LocalDate.now().minusDays(30), 
-                30, "Jason"));
-        medicines.add(new Medicine("Codeine", prescriptions));
+        medicines.add(new Medicine("Codeine", 
+            Arrays.asList(
+                new Prescription(LocalDate.now().minusDays(30), 30, "Jason")
+            )));
 
-        prescriptions.add(
-            new Prescription(LocalDate.now().minusDays(90), 
-                30, "Alice"));
-        medicines.add(new Medicine("Prozac", prescriptions));
+        medicines.add(new Medicine("Prozac", 
+            Arrays.asList(
+                new Prescription(LocalDate.now().minusDays(90), 30, "Alice")
+            )));
 
         customers.add(
             new Customer("110101197010104510", "Ben", 
