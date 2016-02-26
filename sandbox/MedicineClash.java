@@ -5,7 +5,8 @@ import java.time.LocalDate;
 
 public class MedicineClash {
     public static List<Customer> of(List<Customer> customers,
-            long daysBeforeToday, LocalDate now) {
+            long daysBeforeToday, 
+            LocalDate now) {
         return customers.stream()
             .filter(customer -> customer.medicines.size() == 2)
             .filter(customer -> customer.medicines.size() == 2)
