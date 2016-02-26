@@ -1,11 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...........E.
-Time: 0.149
-There was 1 failure:
-1) two_medicines_taken_in_a_partially_overlapping_period(MedicineClashTest)
-java.lang.AssertionError: expected:<Customer Ben (110101197010104510) taking medicines [Medicine Codeine with prescriptions [Prescription written on 2016-01-27 for 30 days by Jason], Medicine Prozac with prescriptions [Prescription written on 2016-01-17 for 40 days by Alice]]> but was:<[Customer Ben (110101197010104510) taking medicines [Medicine Codeine with prescriptions [Prescription written on 2016-01-27 for 30 days by Jason], Medicine Prozac with prescriptions [Prescription written on 2016-01-17 for 40 days by Alice]]]>
-	at MedicineClashTest.two_medicines_taken_in_a_partially_overlapping_period(MedicineClashTest.java:87)
-
-FAILURES!!!
-Tests run: 12,  Failures: 1
-
+MedicineClashTest.java:88: error: cannot find symbol
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()).id);
+                                                                                 ^
+  symbol:   variable id
+  location: interface List<Customer>
+1 error
