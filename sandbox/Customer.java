@@ -16,23 +16,5 @@ public class Customer {
         return "Customer " + this.name + " (" + this.id + ") taking medicines " + this.medicines;
     }
 
-    @Override
-    public boolean equals(Object obj) { 
-        if (obj == this)
-            return true;
-        if (!(obj instanceof Customer))
-            return false;
-        Customer customer = (Customer) obj; 
-        return customer.id == this.id &&
-            customer.name == this.name;
-    }
-
-    @Override
-    public int hashCode() {
-        int hashValue = 11;
-        hashValue = 31 * hashValue + name.hashCode(); 
-        hashValue = 31 * hashValue + id.hashCode(); 
-        return hashValue;
-    }
 }
 
