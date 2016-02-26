@@ -9,7 +9,7 @@ public class MedicineClash {
             long daysBeforeToday, 
             LocalDate now) {
 
-        // TODO: cover the following
+        // TODO: tests covering the following
         return customers.stream()
             .filter(customer -> customer.medicines.size() == 2 &&
                 ((customer.medicines.get(0).name == "Codeine" &&
@@ -29,10 +29,16 @@ public class MedicineClash {
             Customer customer,
             long daysBeforeToday, 
             LocalDate now) {
-        LocalDate startA = customer.medicines.get(0).;
-        LocalDate endA = getEndDate(medicine);
-        LocalDate startB = getStartDate(clashingMedicine);
-        LocalDate endB = getEndDate(clashingMedicine);
+        LocalDate startA = 
+            customer.medicines.get(0).prescriptions.get(0).dispenseDate;
+        LocalDate endA = 
+            customer.medicines.get(0).prescriptions.get(0).dispenseDate
+                .plusDays(customer.medicines.get(0).prescriptions.get(0).daysSupply);
+        LocalDate startB = 
+            customer.medicines.get(1).prescriptions.get(0).dispenseDate;
+        LocalDate endB = 
+            customer.medicines.get(1).prescriptions.get(0).dispenseDate
+                .plusDays(customer.medicines.get(1).prescriptions.get(0).daysSupply);
         
         return !(startA.isAfter(endB) || endA.isBefore(startB)) 
             ? true : false;
