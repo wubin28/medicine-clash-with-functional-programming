@@ -1,6 +1,11 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.108
-
-OK (10 tests)
-
+MedicineClash.java:8: error: cannot find symbol
+            .collect(Collectors.toSet());
+                     ^
+  symbol:   variable Collectors
+  location: class MedicineClash
+MedicineClash.java:7: error: cannot find symbol
+            .filter(customer -> customer.medicines.size() == 1)
+                                        ^
+  symbol:   variable medicines
+  location: variable customer of type Customer
+2 errors

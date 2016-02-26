@@ -3,7 +3,9 @@ import java.util.HashSet;
 
 public class MedicineClash {
     public static Set<Customer> of(Set<Customer> customers) {
-        customers.stream();
+        customers.stream()
+            .filter(customer -> customer.medicines.size() == 1)
+            .collect(Collectors.toSet());
 
         return new HashSet<Customer>();
     }
