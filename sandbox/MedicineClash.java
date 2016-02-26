@@ -16,6 +16,9 @@ public class MedicineClash {
 
     public static boolean isOverlapped(List<Customer> customers,
             long daysBeforeToday, LocalDate now) {
-        return false;
+        if (customers.medicines.size() < 2) {
+            return false;
+        }
+        return true;
     }
 }

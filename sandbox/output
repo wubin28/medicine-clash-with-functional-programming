@@ -1,6 +1,6 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...........
-Time: 0.144
-
-OK (11 tests)
-
+MedicineClash.java:19: error: cannot find symbol
+        if (customers.medicines.size() < 2) {
+                     ^
+  symbol:   variable medicines
+  location: variable customers of type List<Customer>
+1 error
