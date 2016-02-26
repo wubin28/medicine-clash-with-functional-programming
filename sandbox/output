@@ -1,6 +1,11 @@
 JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.112
+..........E
+Time: 0.134
+There was 1 failure:
+1) no_clash_when_not_taking_both_medicines(MedicineClashTest)
+java.lang.AssertionError: expected:<[]> but was:<[Customer@1ed6993a]>
+	at MedicineClashTest.no_clash_when_not_taking_both_medicines(MedicineClashTest.java:41)
 
-OK (10 tests)
+FAILURES!!!
+Tests run: 10,  Failures: 1
 
