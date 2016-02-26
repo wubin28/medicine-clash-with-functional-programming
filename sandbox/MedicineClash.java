@@ -12,7 +12,7 @@ public class MedicineClash {
             .filter(customer -> customer.medicines.size() == 2)
             .filter(customer -> 
                 MedicineClash.isOverlapped(customer, daysBeforeToday, now))
-            .peek(System.out.println(customer))
+            .peek(customer -> System.out.println(customer))
             .collect(Collectors.toList());
     }
 
