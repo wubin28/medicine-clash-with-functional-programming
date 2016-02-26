@@ -27,9 +27,27 @@ public class MedicineClashTest {
 
     @Test
     public void no_clash_when_not_taking_both_medicines() {
+        List<Customer> customers = new ArrayList<>();
+        List<Medicine> medicines = new ArrayList<>();
+        List<Prescription> prescriptions = new ArrayList<>();
+
+        prescriptions.add(
+            new Prescription(LocalDate.now().minusDays(30), 
+                30, "Jason"));
+        medicines.add(new Medicine("Codeine", prescriptions));
+        customers.add(
+            new Customer("110101197010104510", "Ben", 
+                medicines));
+        
+        assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
+    }
+
+    @Test
+    public void no_clash_when_no_overlap() {
         Set<Customer> customers = new HashSet<Customer>();
         Set<Medicine> medicines = new HashSet<Medicine>();
         Set<Prescription> prescriptions = new HashSet<>();
+
         prescriptions.add(
             new Prescription(LocalDate.now().minusDays(30), 
                 30, "Jason"));
@@ -41,7 +59,6 @@ public class MedicineClashTest {
         assertEquals(new HashSet<Customer>(), MedicineClash.of(customers));
     }
 
-    // TODO: no_clash_when_no_overlap
     // TODO: two_medicines_taken_in_a_partially_overlapping_period
     // TODO: two_medicines_taken_overlapping_start_of_period
     // TODO: two_medicines_taken_overlapping_current_date

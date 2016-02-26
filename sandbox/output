@@ -1,6 +1,36 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-..........
-Time: 0.133
-
-OK (10 tests)
-
+MedicineClashTest.java:30: error: cannot find symbol
+        List<Customer> customers = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class MedicineClashTest
+MedicineClashTest.java:30: error: cannot find symbol
+        List<Customer> customers = new ArrayList<>();
+                                       ^
+  symbol:   class ArrayList
+  location: class MedicineClashTest
+MedicineClashTest.java:31: error: cannot find symbol
+        List<Medicine> medicines = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class MedicineClashTest
+MedicineClashTest.java:31: error: cannot find symbol
+        List<Medicine> medicines = new ArrayList<>();
+                                       ^
+  symbol:   class ArrayList
+  location: class MedicineClashTest
+MedicineClashTest.java:32: error: cannot find symbol
+        List<Prescription> prescriptions = new ArrayList<>();
+        ^
+  symbol:   class List
+  location: class MedicineClashTest
+MedicineClashTest.java:32: error: cannot find symbol
+        List<Prescription> prescriptions = new ArrayList<>();
+                                               ^
+  symbol:   class ArrayList
+  location: class MedicineClashTest
+MedicineClashTest.java:42: error: cannot find symbol
+        assertEquals(new ArrayList<Customer>(), MedicineClash.of(customers));
+                         ^
+  symbol:   class ArrayList
+  location: class MedicineClashTest
+7 errors
