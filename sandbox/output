@@ -3,9 +3,4 @@ MedicineClash.java:9: error: cannot find symbol
                      ^
   symbol:   variable Collectors
   location: class MedicineClash
-MedicineClash.java:8: error: cannot find symbol
-            .filter(customer -> customer.medicines.size() == 1)
-                                        ^
-  symbol:   variable medicines
-  location: variable customer of type Customer
-2 errors
+1 error
