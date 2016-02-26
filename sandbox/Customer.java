@@ -25,6 +25,7 @@ public class Customer {
         Customer customer = (Customer) obj; 
         return customer.id == this.id &&
             customer.name == this.name;
+    }
 
     @Override
     public int hashCode() {

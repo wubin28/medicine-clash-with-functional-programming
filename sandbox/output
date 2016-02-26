@@ -1,7 +1,7 @@
-Customer.java:30: error: ';' expected
-    public int hashCode() {
-                       ^
-Customer.java:36: error: reached end of file while parsing
-}
- ^
+Customer.java:33: error: incompatible types: String cannot be converted to int
+        hashValue = 31 * hashValue + name; 
+                                   ^
+Customer.java:34: error: incompatible types: String cannot be converted to int
+        hashValue = 31 * hashValue + id; 
+                                   ^
 2 errors
