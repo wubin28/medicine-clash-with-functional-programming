@@ -40,8 +40,8 @@ public class MedicineClashTest {
             new Customer("110101197010104510", "Ben", 
                 medicines));
         
-        assertEquals(new ArrayList<Customer>(), 
-            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
+        assertEquals(0, 
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()).size());
     }
 
     @Test
