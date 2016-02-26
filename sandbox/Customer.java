@@ -10,4 +10,9 @@ public class Customer {
         this.name = name;
         this.medicines = medicines;
     }
+
+    @Override
+    public String toString() {
+        return "Customer " + this.name + " (" + this.id + ") taking medicines " + this.medicines;
+    }
 }
