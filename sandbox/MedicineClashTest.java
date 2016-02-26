@@ -41,7 +41,7 @@ public class MedicineClashTest {
                 medicines));
         
         assertEquals(new ArrayList<Customer>(), 
-            MedicineClash.of(customers, 90, LocalDate.now()));
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
     }
 
     @Test
@@ -63,7 +63,7 @@ public class MedicineClashTest {
                 medicines));
         
         assertEquals(new ArrayList<Customer>(), 
-            MedicineClash.of(customers, 90, LocalDate.now()));
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
     }
 
     // TODO: two_medicines_taken_in_a_partially_overlapping_period

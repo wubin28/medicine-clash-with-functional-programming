@@ -1,6 +1,13 @@
-JUnit version 4.11-SNAPSHOT-20120416-1530
-...........
-Time: 0.143
-
-OK (11 tests)
-
+MedicineClashTest.java:44: error: method of in class MedicineClash cannot be applied to given types;
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
+                         ^
+  required: List<Customer>,long,LocalDate
+  found: List<Customer>,String,String,int,LocalDate
+  reason: actual and formal argument lists differ in length
+MedicineClashTest.java:66: error: method of in class MedicineClash cannot be applied to given types;
+            MedicineClash.of(customers, "Codeine", "Prozac", 90, LocalDate.now()));
+                         ^
+  required: List<Customer>,long,LocalDate
+  found: List<Customer>,String,String,int,LocalDate
+  reason: actual and formal argument lists differ in length
+2 errors
