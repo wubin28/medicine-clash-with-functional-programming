@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 public class MedicineClash {
     public static Set<Customer> of(Set<Customer> customers) {
         return customers.stream()
-            .filter(customer -> customer.medicines.size() == 1)
+            .filter(customer -> customer.medicines.size() == 2)
             .collect(Collectors.toSet());
     }
 }
